@@ -15,7 +15,7 @@ A szkript a legtöbb modern böngészőre telepíthető.<br>
     * [Új Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/violentmonkey/eeagobfjdenkkddmbclomhiblgggliao)
 1. Most már telepítheted a Terc-PLUS szkriptet. Ehhez [kattints ide](https://github.com/MentalGravis/moodlePlus/releases/latest/download/moodlePlus.user.js).
 1. A megjelenő oldalon kattints az **Install** gombra.
-1. Lépj be a Terc-etalon-ba, és használd egészséggel.
+1. Kész is vagy, kezdheted a moodle teszted.
 
 
 <br>
