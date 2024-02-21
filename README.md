@@ -28,22 +28,9 @@ A szkript a legtöbb modern böngészőre telepíthető.<br>
 <!---
 # Képek
 
-
-**TERC Plus menü**<br>
-<picture>
-<img alt="TERC Plus menü" src="img/terc_plus_menu.png">
-</picture><br>
 **Export All gomb**<br>
 <picture>
 <img alt="Export All gomb" src="img/terc_plus_export_all_button.png">
-</picture><br>
-**Minden menügombbal**<br>
-<picture>
-<img alt="Minden menügombbal" src="img/menu_with_buttons.png">
-</picture><br>
-Csak az **Összesítők fedlapok** és a **Vissza** gombokkal<br>
-<picture>
-<img alt="Csak az Összesítők fedlapok és a Vissza gombokkal" src="img/menu_without_buttons.png">
 </picture>
 
 <br>
@@ -75,3 +62,10 @@ Ha új hibát észlelsz, vagy új funkció beépítésére szeretnél ajánlatot
    - Ha full pont, akkor az alaptáblába bejegyzésre kerül az összes kérdés
    - Ha eltérés van, és nem full pont, akkor újra felvételre kerül a kérdés, és a kitöltés sorszáma feljegyzésre kerül
      - A következő kitöltésnél minden már próbált válaszlehetőséget mutat, a kitöltési sorszámmal együtt 
+1. Import-Export funkció
+   - Alaptáblát exportálja
+   - Több fajta export
+     - JSON-ba, hogy más böngészőbe is beolvasható legyen
+     - Emberi olvasható
+       - txt fomrázva?
+       - html formázva?
