@@ -22,7 +22,14 @@ A szkript a legtöbb modern böngészőre telepíthető.<br>
 
 # Funkciók
 
-1. cirip
+1. Beolvassa a kérdést és válaoszokat, ezeket a Violentmonkey memóriájába menti
+   * A GM_setValue/GM_getValue segítségével
+   * Kulcs a moodle teszt tetején olvasható elérési út -> ha a teszteknek más a neve, egyedi lesz minden teszt neve
+   * Az érték egy dict, amiben a kulcs a kérdés, az érték egy dict, melyben a kulcs a válasz, az érték pedig a válasz helyessége (jelenleg boolean)
+   * {teszt felső sor:{kérdés:{válasz:bool,válasz2:bool,válasz3:bool,...},kérdés2:{válasz:bool,válasz2:bool,...},...}}
+   * A dictet végül nem JSON.stingify-olom, mert így sem ad hibát, ellenben gyorsabb, kevesebb műveletet kell végezni, és még a mentett értékek is jobban olvashatóak
+1. Ami az értékeknél true-ra van állítva, azt zölden kiemeli
+1. Jelenleg csak a Violentmonkey felületén lehet a válaszok értékét változtatni!
 
 <br>
 <!---
@@ -53,7 +60,7 @@ Ha új hibát észlelsz, vagy új funkció beépítésére szeretnél ajánlatot
 
 1. Először a legegyszerűbb, feleletválasztós kérdések megoldása a cél
    - Egyenlőre nem veszem figyelembe, hogy a végén megadja-e a jó megoldásokat, olyan teszthez használom, mely esetben ez nem áll fent
-   - A kitöltést figyeli és menti el az állapotokat {kérdés:{válasz:chboxStateBool;válasz2:checkboxStateBool};kérdés2...}
+   - A kitöltést figyeli és menti el az állapotokat {kérdés:{válasz:chboxStateBool,válasz2:checkboxStateBool},kérdés2...}
    - Legközelebb, ha ugyanazon kérdés előkerül, akkor egy kis ablakban kiírja a legutóbb megadott választ és színezze meg az adott kérdés hátterét
 1. A teszt leadásakor jelenjen meg egy gomb, amire kattintva kijön egy ablak, amiben megmutatja, hogy mely kérdésere milyen válaszlehetőségek vannak, és miket adtunk meg, és az eltér-e az előző kitöltéstől/kitöltésektől
    - Ha nem, nem történik új bejegyzés, de megjelölhető biztosként/kétségesként (opcionális)
